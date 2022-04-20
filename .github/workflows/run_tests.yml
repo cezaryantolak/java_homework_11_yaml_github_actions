@@ -1,4 +1,25 @@
-name: Control tests
+name: Control tests on develop branch
 
+on:
+  push:
+    branches: 
+      - develop
+      - main
 
-  
+jobs:
+  test:
+    name: Running Form Test
+    runs-on: ubuntu-latest
+    if: github.ref == ''refs/heads/develop'
+      activeEnvironment: test1
+    if: github.ref == ''refs/heads/main'
+      activeEnvironment: test2
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Test
+      run: mvn -Dtest=FormPopTest test
