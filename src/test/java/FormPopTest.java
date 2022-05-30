@@ -31,6 +31,6 @@ public class FormPopTest extends TestBase {
 
         assertThat("Wrong message", message, equalTo(System.getProperty("message")));
 
-        log.info("Test for smoke testtt");
+        log.info("Test for smoke testttttt");
     }
 }
