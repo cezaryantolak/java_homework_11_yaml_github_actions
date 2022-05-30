@@ -38,7 +38,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Smoke test
-      run: mvn SmokeTest  
+      run: mvn -Dtest=SmokeTest test 
       
 
   
