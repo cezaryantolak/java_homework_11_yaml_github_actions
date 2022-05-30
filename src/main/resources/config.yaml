@@ -1,0 +1,47 @@
+#Choose active environment: test1, test2, test3
+activeEnvironmentName: test3
+browser:
+  #Available browsers: chrome ; firefox ; default: Edge
+  browserName: chrome
+environments:
+  test1:
+    envName: test1
+    appUrl: https://seleniumui.moderntester.pl/form.php
+    firstName: Jan
+    lastName: Kowalski
+    email: jkow@asd.com
+    age: 47
+    continent: asia
+    message: Form send with success
+    command: browser-commands
+    filepath: src/main/resources/file.txt
+    pageTitle: Automation Pratice Form
+
+  test2:
+    envName: test2
+    appUrl: https://seleniumui.moderntester.pl/form.php
+    firstName: Mateusz
+    lastName: Nowak
+    email: mnowak@qwe.com
+    age: 44
+    continent: africa
+    message: Form send with success
+    command: switch-commands
+    filepath: src/main/resources/file.txt
+    pageTitle: Automation Pratice Form
+
+  test3:
+    envName: test3
+    appUrl: https://seleniumui.moderntester.pl/form.php
+    firstName: Jan
+    lastName: Kowal
+    email: jkowal@poi.pl
+    age: 39
+    continent: europe
+    message: Form send with success
+    command: wait-commands
+    filepath: src/main/resources/file.txt
+    pageTitle: Automation Pratice Form
+
+
+---
