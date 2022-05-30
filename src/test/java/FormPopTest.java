@@ -30,5 +30,7 @@ public class FormPopTest extends TestBase {
         String message = formPage.getValidationMsg();
 
         assertThat("Wrong message", message, equalTo(System.getProperty("message")));
+
+        log.info("Test for smoke test");
     }
 }
