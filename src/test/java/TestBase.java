@@ -17,7 +17,7 @@ public class TestBase {
         appProperties = AppProperties.getInstance();
         browserHandler = new BrowserHandler();
         driver = browserHandler.getDriver();
-        log.info("<<<<<Driver initialized>>>");
+        log.info("<<<<<<<Driver initialized>>>");
         driver.get(System.getProperty("appUrl"));
     }
 
