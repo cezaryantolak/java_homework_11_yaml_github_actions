@@ -30,7 +30,7 @@ jobs:
     runs-on: windows-latest
     
     needs: [build]
-    if: always() && (needs.build.result == 'success'
+    if: needs.build.result == 'success'
     
     steps:
     - uses: actions/checkout@v3
